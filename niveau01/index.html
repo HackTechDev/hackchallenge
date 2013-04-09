@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<script language="javascript">
+function codeentree(motdepasse){
+        if (motdepasse =="morbidangel"){
+                location.href = "./decouvert.html";
+        }
+        else {
+                alert("Mot de passe incorrect !");
+                location.href = "./index.html";
+        };
+}
+
+</script>
+</head>
+<body>
+<h3>D&eacute;fi 01</h3>
+<form name="formulaire">
+Entr&eacute;e votre mot de passe :<br><br>
+<input type="password" name="texte" size="20">
+<input type="reset" value="Valider" onClick="codeentree(formulaire.texte.value)">
+</form>
+<br>
+<a href="../index.php">Retour au menu</a>
+
+</body>
+</html>
